@@ -164,6 +164,51 @@ public class practice3 {
         }
         return result;
     }
-    */
 
+    static int printNumber(int num) {
+        if (num == 0) {
+            return 0;
+        }else {
+            System.out.println(num);
+            return printNumber(num-1);
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(printNumber(10));
+    }
+
+    static int printNumber(int num){
+        if(num==0){
+            return 0;
+        } else {
+            System.out.println(num);
+            return printNumber(num-1);
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(printNumber(10));
+    }
+
+
+    static String printAt(String str){
+        if(str.length()<=1){
+            return str;
+        }
+        return str.charAt(0) + "@" + printAt(str.substring(1));
+    }
+
+    public static void main(String[] args) {
+        System.out.println(printAt("hello"));
+    }
+
+
+    public static void main(String[] args) {
+        String a = "Hello World!";
+        System.out.println(a.substring(3,7));
+    }
+*/
+
+}
 
