@@ -209,6 +209,12 @@ public class practice3 {
         System.out.println(a.substring(3,7));
     }
 */
+    static String printAt(String str){
+
+        int i=0;
+        String result = "";
+    }
+
 
 }
 
